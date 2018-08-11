@@ -3,8 +3,7 @@
 /************/
 /*** Font ***/
 /************/
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
-$_font-family: 'Roboto', 'San Francisco', '微軟正黑體', 'sans-serif';
+$_font-family: 'Source Sans Pro', 'San Francisco', '微軟正黑體', 'sans-serif';
 $_font-size: 48px;
 
 /*************/
@@ -65,7 +64,6 @@ footer, header, hgroup, menu, nav, section {
 
 #react-impressjs{
   line-height: 1;
-  font-family: $_font-family;
   min-height: 100vh;
   background: rgb(215, 215, 215);
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(155, 165, 175)));
@@ -115,19 +113,11 @@ sup {top: -.5em;}
   -o-box-sizing:      border-box;
   box-sizing:         border-box;
 
-  font-family: $_font-family;
-  font-size: $_font-size;
   line-height: 1.5;
   
   /*****************/
   /*** Font-Size ***/
   /*****************/
-  h1, .h1{ font-size: ($_font-size * 2.6); }
-  h2, .h2{ font-size: ($_font-size * 2.15); }
-  h3, .h3{ font-size: ($_font-size * 1.7); }
-  h4, .h4{ font-size: ($_font-size * 1.3); }
-  h5, .h5{ font-size: ($_font-size * 1); }
-  h6, .h6{ font-size: ($_font-size * 0.85); }
 }
 .impress-enabled {
   .step {
@@ -204,16 +194,7 @@ sup {top: -.5em;}
   color: rgb(102, 102, 102);
   text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-  $_font-size: 35px;
-  font-size: $_font-size;
-  letter-spacing: 1px;
   
-  h1, .h1{ font-size: ($_font-size * 2.6); }
-  h2, .h2{ font-size: ($_font-size * 2.15); }
-  h3, .h3{ font-size: ($_font-size * 1.7); }
-  h4, .h4{ font-size: ($_font-size * 1.3); }
-  h5, .h5{ font-size: ($_font-size * 1); }
-  h6, .h6{ font-size: ($_font-size * 0.85); }
   
   &:hover{
     box-shadow: 0 8px 16px rgba(0,40,80,.08), 0 8px 24px 5px rgba(0,0,0,.08);
