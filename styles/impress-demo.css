@@ -83,7 +83,6 @@ table {
 */
 body {
     min-height: 740px;
-
     background: rgb(215, 215, 215);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
@@ -174,9 +173,6 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
-    font-size: 48px;
-    line-height: 1.5;
 }
 
 /*
