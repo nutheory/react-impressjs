@@ -144,8 +144,6 @@ import 'react-impressjs/styles/react-impressjs.css';
 Currently, you can use style of **impress.js** or **React-impressJS** in your app:
 
 ```js
-// style of impress
-import 'react-impressjs/styles/impress-demo.css';
 
 // style of react-impressjs
 import 'react-impressjs/styles/react-impressjs.css';
