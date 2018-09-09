@@ -1,5 +1,4 @@
 import React, {Component}                   from 'react';
-import update                               from 'react/lib/update';
 import {rotate, scale, toNumber, translate} from './util';
 
 const defaultData = {
@@ -33,15 +32,12 @@ export default class Step extends Component {
     initStep(this.state);
   }
 
-  componentWillReceiveProps(nextProps) {
-    const {id, isPresented} = this.state;
+  static getDerivedStateFromProps(nextProps, prevState){
+    const {id, isPresented} = prevState;
 
-    if (id === nextProps.activeStep.id && !isPresented)
-      this.setState(update(this.state, {
-        isPresented: {
-          $set: true,
-        },
-      }));
+    if (id === nextProps.activeStep.id && !isPresented){
+      return { isPresented: true };
+    }
   }
 
   // Step's Event

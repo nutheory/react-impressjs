@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import update             from 'react/lib/update';
+import update             from 'immutability-helper';
 import PropTypes          from 'prop-types';
 import {
   computeWindowScale,
