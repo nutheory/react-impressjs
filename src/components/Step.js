@@ -38,6 +38,7 @@ export default class Step extends Component {
     if (id === nextProps.activeStep.id && !isPresented){
       return { isPresented: true };
     }
+    return { isPresented: false };
   }
 
   // Step's Event
