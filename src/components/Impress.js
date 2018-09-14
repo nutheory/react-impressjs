@@ -248,7 +248,7 @@ export default class Impress extends Component {
     const {config, activeStep} = this.state;
     let {windowScale} = this.state;
 
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
 
     let target = {
       x: -step.data.x,
@@ -300,7 +300,7 @@ export default class Impress extends Component {
       },
     }));
 
-    window.location.hash = _lastHash = '#/' + step.id;
+    // window.location.hash = _lastHash = '#/' + step.id;
   }
 
   // Navigate to the PREVIOUS Step.
