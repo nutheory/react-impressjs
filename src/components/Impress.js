@@ -90,22 +90,18 @@ export default class Impress extends Component {
       if (e.keyCode === 9 ||
           (e.keyCode >= 32 && e.keyCode <= 40)) {
         switch (e.keyCode) {
-          case 35: // End
+          case 35:
+            // End
             this.end();
             break;
-          case 36: // Home
+          case 36:
+            // Home
             this.home();
             break;
-          case 33: // Page up
           case 37: // Left
-          case 38: // Up
             this.prev();
             break;
-          case 9:  // Tab
-          case 32: // Space
-          case 34: // Page down
           case 39: // Right
-          case 40: // Down
             this.next();
             break;
           default:
