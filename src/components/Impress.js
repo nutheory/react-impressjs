@@ -73,12 +73,9 @@ export default class Impress extends Component {
     };
   }
 
-  componentWillMount() {
-    // Init impress
-    this.init();
-  }
-
   componentDidMount() {
+    this.init();
+
     const {impressSupported} = this.state;
 
     // 2017/2/28 暫時想不到好方法
