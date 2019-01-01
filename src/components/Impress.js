@@ -120,19 +120,22 @@ export default class Impress extends Component {
     }, 250), false);
   }
 
-  componentWillReceiveProps(nextPorps) {
-    this.setState({
-      fallbackMessage: nextPorps.fallbackMessage,
-      hint: nextPorps.hint,
-      hintMessage: nextPorps.hintMessage,
-    });
+  static getDerivedStateFromProps(nextProps, prevState){
+    if(nextProps !== prevState){
+      return {
+        fallbackMessage: nextProps.fallbackMessage,
+        hint: nextProps.hint,
+        hintMessage: nextProps.hintMessage,
+      }
+    }
+    else return null
   }
 
-  componentWillUnmount() {
-    document.removeEventListener('keydown', function(event) {
-      console.log(event.keyCode);
-    }, false);
-  }
+  // componentWillUnmount() {
+  //   document.removeEventListener('keydown', function(event) {
+  //     console.log(event.keyCode);
+  //   }, false);
+  // }
 
   /**
    * Initialize Impress.
